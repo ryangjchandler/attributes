@@ -49,6 +49,11 @@ final class Attributes
         return count($attributes) > 0 ? $attributes[0]->newInstance() : null;
     }
 
+    public function exists(): bool
+    {
+        return count($this->all()) > 0;
+    }
+
     /**
      * @return \ReflectionAttribute[]
      */

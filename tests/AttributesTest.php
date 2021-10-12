@@ -62,7 +62,9 @@ test('first() returns `null` when no attributes are found on a method', function
 });
 
 test('all() returns all attributes found on a method', function () {
-    $attributes = Attributes::find(MyAttribute::class)->in([Example::class, 'test'])->all();
+    $attributes = Attributes::find(MyAttribute::class)
+        ->in([Example::class, 'test'])
+        ->all();
 
     expect($attributes)
         ->toHaveLength(2)
