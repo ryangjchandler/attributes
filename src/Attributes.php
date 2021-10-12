@@ -46,9 +46,12 @@ final class Attributes
     {
         $attributes = $this->attributes();
 
-        return count($attributes) > 0 ? $attributes[0] : null;
+        return count($attributes) > 0 ? $attributes[0]->newInstance() : null;
     }
 
+    /**
+     * @return \ReflectionAttribute[]
+     */
     private function attributes(): array
     {
         return $this->reflector->getAttributes($this->attribute);
