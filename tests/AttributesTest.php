@@ -3,28 +3,28 @@
 use RyanChandler\Attributes\Attributes;
 
 #[Attribute(Attribute::IS_REPEATABLE | Attribute::TARGET_ALL)]
-class MyAttribute {
-
+class MyAttribute
+{
 }
 
 #[Attribute]
-class AnotherAttribute {
-
+class AnotherAttribute
+{
 }
 
 #[MyAttribute]
 #[MyAttribute]
-class Example {
-
+class Example
+{
     #[MyAttribute]
     #[MyAttribute]
-    public function test() {
-
+    public function test()
+    {
     }
 
     #[AnotherAttribute]
-    public function multiple() {
-
+    public function multiple()
+    {
     }
 }
 
