@@ -2,7 +2,6 @@
 
 namespace RyanChandler\Attributes;
 
-use Reflection;
 use ReflectionAttribute;
 use ReflectionClass;
 use ReflectionMethod;
@@ -13,7 +12,8 @@ final class Attributes
 
     private function __construct(
         private ?string $attribute
-    ) {}
+    ) {
+    }
 
     public static function find(string $attribute): self
     {
