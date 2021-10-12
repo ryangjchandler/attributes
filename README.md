@@ -5,7 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/ryangjchandler/attributes/Check%20&%20fix%20styling?label=code%20style)](https://github.com/ryangjchandler/attributes/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/ryangjchandler/attributes.svg?style=flat-square)](https://packagist.org/packages/ryangjchandler/attributes)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+This package provides an improved API for working with [attributes](https://www.php.net/manual/en/language.attributes.overview.php) in PHP 8.0+.
 
 ## Support development
 
@@ -16,26 +16,7 @@ If you would like to support the on going maintenance and development of this pa
 You can install the package via composer:
 
 ```bash
-composer require vendor_slug/package_slug
-```
-
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --provider="RyanChandler\Attributes\AttributesServiceProvider" --tag="attributes-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-```bash
-php artisan vendor:publish --provider="RyanChandler\Attributes\AttributesServiceProvider" --tag="attributes-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
+composer require ryangjchander/attributes
 ```
 
 ## Usage
