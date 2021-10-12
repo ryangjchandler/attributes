@@ -12,7 +12,8 @@ final class Attributes
 
     private function __construct(
         private string $attribute
-    ) {}
+    ) {
+    }
 
     public static function find(string $attribute): self
     {
