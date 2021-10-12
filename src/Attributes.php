@@ -11,9 +11,8 @@ final class Attributes
     private ReflectionClass|ReflectionMethod $reflector;
 
     private function __construct(
-        private ?string $attribute
-    ) {
-    }
+        private string $attribute
+    ) {}
 
     public static function find(string $attribute): self
     {
@@ -54,11 +53,8 @@ final class Attributes
         return count($this->all()) > 0;
     }
 
-    /**
-     * @return \ReflectionAttribute[]
-     */
     private function attributes(): array
     {
-        return $this->reflector->getAttributes($this->attribute);
+        return $this->reflector->getAttributes($this->attribute, ReflectionAttribute::IS_INSTANCEOF);
     }
 }
