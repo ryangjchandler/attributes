@@ -1,11 +1,11 @@
 {
-    "name": "vendor_slug/package_slug",
+    "name": "ryangjchandler/attributes",
     "description": "A simple API for working with attributes in PHP.",
     "keywords": [
         "ryangjchandler",
-        "package_slug"
+        "attributes"
     ],
-    "homepage": "https://github.com/vendor_slug/package_slug",
+    "homepage": "https://github.com/ryangjchandler/attributes",
     "license": "MIT",
     "authors": [
         {
